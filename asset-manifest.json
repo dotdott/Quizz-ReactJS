@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/Quizz-ReactJS/static/css/main.56c8eb2e.chunk.css",
-    "main.js": "/Quizz-ReactJS/static/js/main.6f5fc100.chunk.js",
-    "main.js.map": "/Quizz-ReactJS/static/js/main.6f5fc100.chunk.js.map",
-    "runtime-main.js": "/Quizz-ReactJS/static/js/runtime-main.f6b8757b.js",
-    "runtime-main.js.map": "/Quizz-ReactJS/static/js/runtime-main.f6b8757b.js.map",
-    "static/js/2.d91e955d.chunk.js": "/Quizz-ReactJS/static/js/2.d91e955d.chunk.js",
-    "static/js/2.d91e955d.chunk.js.map": "/Quizz-ReactJS/static/js/2.d91e955d.chunk.js.map",
-    "static/js/3.331a9e10.chunk.js": "/Quizz-ReactJS/static/js/3.331a9e10.chunk.js",
-    "static/js/3.331a9e10.chunk.js.map": "/Quizz-ReactJS/static/js/3.331a9e10.chunk.js.map",
+    "main.css": "/Quizz-ReactJS/static/css/main.3e49c8da.chunk.css",
+    "main.js": "/Quizz-ReactJS/static/js/main.3d276c07.chunk.js",
+    "main.js.map": "/Quizz-ReactJS/static/js/main.3d276c07.chunk.js.map",
+    "runtime-main.js": "/Quizz-ReactJS/static/js/runtime-main.1a4c274d.js",
+    "runtime-main.js.map": "/Quizz-ReactJS/static/js/runtime-main.1a4c274d.js.map",
+    "static/js/2.740d2c38.chunk.js": "/Quizz-ReactJS/static/js/2.740d2c38.chunk.js",
+    "static/js/2.740d2c38.chunk.js.map": "/Quizz-ReactJS/static/js/2.740d2c38.chunk.js.map",
     "index.html": "/Quizz-ReactJS/index.html",
-    "static/css/main.56c8eb2e.chunk.css.map": "/Quizz-ReactJS/static/css/main.56c8eb2e.chunk.css.map",
-    "static/js/2.d91e955d.chunk.js.LICENSE.txt": "/Quizz-ReactJS/static/js/2.d91e955d.chunk.js.LICENSE.txt"
+    "static/css/main.3e49c8da.chunk.css.map": "/Quizz-ReactJS/static/css/main.3e49c8da.chunk.css.map",
+    "static/js/2.740d2c38.chunk.js.LICENSE.txt": "/Quizz-ReactJS/static/js/2.740d2c38.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f6b8757b.js",
-    "static/js/2.d91e955d.chunk.js",
-    "static/css/main.56c8eb2e.chunk.css",
-    "static/js/main.6f5fc100.chunk.js"
+    "static/js/runtime-main.1a4c274d.js",
+    "static/js/2.740d2c38.chunk.js",
+    "static/css/main.3e49c8da.chunk.css",
+    "static/js/main.3d276c07.chunk.js"
   ]
 }
