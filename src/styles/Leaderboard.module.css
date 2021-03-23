@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 1rem;
+    color: var(--yellow);
+}
+
+.title img {
+    margin-left: 1rem;
+    width: 35px;
+}
+
+.rankings {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+.playerBoard,
+.playerScore {
+    color: var(--orange-light);
+}

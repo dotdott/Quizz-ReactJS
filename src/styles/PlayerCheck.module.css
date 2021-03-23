@@ -1,0 +1,40 @@
+.scoreSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    gap: 2rem;
+}
+
+.scoreSection h1 {
+    text-align: center;
+}
+
+.scoreSection input {
+    width: 320px;
+    padding: 1rem .3rem;
+    font-size: 1rem;
+}
+
+.scoreSection label {
+    position: relative;
+    top: 22px;
+
+    color: #fff;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.playerButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.playerButtons button {
+    cursor: pointer;
+    width: 150px;
+    padding: 1rem;
+  
+    font-size: 20px;
+    font-weight: 700;
+}

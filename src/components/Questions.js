@@ -1,8 +1,10 @@
-import React, { useContext, useEffect } from 'react';
+import Axios from 'axios';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { QuestionsContext } from '../contexts/QuestionsContext';
+
 import Question from './Question';
-import Axios from 'axios';
+import styles from '../styles/Questions.module.css';
 
 const Questions = () => {
         const {
@@ -11,29 +13,37 @@ const Questions = () => {
             score, 
             updateLoopQuestion,
             playerName,
-            setPlayers,
-            players,
             resetValues
         } = useContext(QuestionsContext);
 
+        const [saveWarning, setSaveWarning] = useState('');
 
         function saveScore(name,score){
-             Axios.post('http://127.0.0.1:3333/quizz/insert', {
-                name: name,
-                score: score
-             })
-            // setPlayers([...players, {name: name, score: score}])
+            if(name !== ''){
+                Axios.post('https://quizz-app-heroku.herokuapp.com/quizz/insert', {
+                    name: name,
+                    score: score
+                })
+                setSaveWarning("You'r score has been saved, check the leaderboard!")
+            }
+            setSaveWarning("You need to pass a name in order to save you'r score.")
         }
 
 return (
     <>
     {showScore ? (
-        <div className="score-section">
-            <h2> {playerName} scored {score} out of {Question.length} </h2>
-
-                    <button onClick={() => saveScore(playerName, score)}>Save Score</button>
-            <Link to="/Quizz-ReactJS/Leaderboard">
-                    <button>Leaderboard</button>
+        <div className={styles.scoreSection}>
+        <div className={styles.scoreResult}>
+            <h2> <span>{playerName}</span> scored {score} out of {Question.length} </h2>
+                <span className={styles.saveAlert}>{saveWarning}</span>
+        </div>
+                    <button onClick={() => saveScore(playerName, score)} className={styles.saveBtn}>
+                        Save Score
+                    </button>
+                <Link to="/Quizz-ReactJS/Leaderboard">
+                    <button className="board-btn">
+                        Leaderboard
+                    </button>
                 </Link>
 
                 <Link to="/Quizz-ReactJS/">
@@ -41,10 +51,10 @@ return (
                 </Link>
         </div>
         ) : (
-            <div className="questions">
+            <div className={styles.questions}>
             <h2>{Question[LoopQuestions].question}</h2>
     
-                <div className="options">
+                <div className={styles.options}>
                     {Question[LoopQuestions].options.map(question => {
                         return (
                         <a href='#'
